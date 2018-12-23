@@ -1,0 +1,109 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Node starter kit with sample endpoint",
+		"version": "1.0.0",
+		"title": "Node starter kit"
+	},
+	"basePath": "/api/v1",
+	"schemes": [
+		"http"
+	],
+	"consumes": [
+		"application/json"
+	],
+	"produces": [
+		"application/json"
+	],
+	"paths": {
+		"/users": {
+			"post": {
+				"security": [{
+					"Bearer": []
+				}],
+				"tags": [
+					"contact"
+				],
+				"summary": "Add a Contact",
+				"description": "Used to add a new contact to an existing Watson Campaign Automation database.",
+				"parameters": [{
+					"name": "",
+					"in": "body",
+					"description": "",
+					"schema": {
+						"$ref": "#/definitions/users"
+					}
+				}],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Create a new user",
+						"schema": {
+							"$ref": "#/definitions/users"
+						}
+					}
+				}
+			},
+			"put": {
+				"security": [{
+					"Bearer": []
+				}],
+				"tags": [
+					"users"
+				],
+				"summary": "Update users",
+				"description": "Update users",
+				"parameters": [{
+					"name": "",
+					"in": "body",
+					"description": "",
+					"schema": {
+						"$ref": "#/definitions/users"
+					}
+				}],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Successfully updated user",
+						"schema": {
+							"$ref": "#/definitions/users"
+						}
+					}
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Bearer": {
+			"type": "apiKey",
+			"name": "Authorization",
+			"in": "header"
+		}
+	},
+	"definitions": {
+		"users": {
+			"required": [
+				"firstName",
+				"lastName"
+			],
+			"properties": {
+				"firstName": {
+					"type": "string",
+					"description": "First Name"
+				},
+				"lastName": {
+					"type": "string",
+					"description": "Last Name"
+				},
+				"address": {
+					"type": "string",
+					"description": "Address"
+				}
+			}
+		}
+	}
+}

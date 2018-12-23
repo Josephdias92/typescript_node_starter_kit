@@ -1,0 +1,19 @@
+{
+    "internalServerError": "Internal Server Error.",
+    "idNotFound": "Given id is not found",
+    "invalidAuthentication": "Invalid Authentication Credentials",
+    "missingAuthHeader": "Missing Authorization Header",
+    "emptyUserOrPass": "Empty Username or Password in Authorization Header",
+    "forbiddenRequest": "The resource is forbidden for the user credentials",
+    "idMappingCategoryNotFound": "Category not found",
+    "idMappingTypeNotFound": "Type not found",
+    "missingContactListId": "Parameter contactListId was not provided in API call",
+    "missingAutoResponderId":"Only sending custom automated mailings are allowed. Please provide the mailing ID for a custom automated mailing.",
+    "missingDatabaseId": "Parameter databaseId was not provided in API call",
+    "addContactIdNotFound": "Given %s is not found",
+    "emptyUser/Password": "Provide API Key and Password",
+    "undefinedAutoResponderId": "Provide an AutoResponderId",
+    "invalidListId": "Please provide valid %s",
+    "mandatoryFieldsMissing": "One or some fields are missing : mandatory fields are %s",
+    "invalidLookupFilterParam": "Invalid lookup filter params. Supported params are %s"
+}
