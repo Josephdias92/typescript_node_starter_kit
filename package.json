@@ -51,7 +51,7 @@
     "concurrently": "^2.2.0",
     "jest": "^22.4.4",
     "nodemon": "^1.19.3",
-    "shelljs": "^0.8.1",
+    "shelljs": "^0.8.5",
     "supertest": "3.0.0",
     "ts-jest": "^23.10.4",
     "ts-node": "^5.0.0",
